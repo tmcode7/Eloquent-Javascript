@@ -41,3 +41,45 @@ const minimum = (x, y, z) => {
 }
 console.log(minimum(4, 3, 6))
 
+//5. Evens or Odd
+const EvenOdd = function(x) {
+    if (x % 2 == 0) {
+        console.log ('Even')
+    }else console.log("Odd")
+}
+console.log(EvenOdd(6))
+
+//5*. Recursive Evens
+const Evens = function isEven(number) {
+    if (number % 2 == 0) {
+        return true;
+    }else return false;
+}
+console.log(Evens(50))
+console.log(Evens(75))
+console.log(Evens(-1))
+
+//6. Bean Counter
+function countBs(string){
+    let count = 0
+    for (let i = 0; i < string.length; i += 1){
+        if(string[i] == "B"){
+            count += 1
+        }
+    }
+    return count
+}
+
+//6*. Bean Counter with own character
+function countChar(string, char){
+    let count = 0
+    for (let i = 0; i < string.length; i ++){
+        if(string[i] == char){
+            count += 1
+        }
+    }
+    return count
+}
+console.log(countBs("BBBC"));
+
+console.log(countChar("kakkerlak", "k"));
