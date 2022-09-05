@@ -107,4 +107,38 @@ function sum(array) {
     return total;
   }  
 
-  
+
+//8. Reverse an array
+array.reverse()  
+
+
+//9. Repetition
+let labels = [];
+repeat(5, i => {
+labels.push(`Unit ${i + 1}`);
+});
+console.log(labels);
+
+
+//10. Functions with control flow
+function unless(test, then) {
+    if (!test) then();
+    }
+    repeat(3, n => {unless(n % 2 == 1, () => {
+    console.log(n, "is even");
+    });
+});
+
+
+//11. Transforming an array with MAP
+/* The map method transforms an array by applying a function to all of its elements and building a new array from the returned values. 
+The new array will have the same length as the input array, but its content will have been
+mapped to a new form by the function.
+ */
+
+
+//12. Summarizing with REDUCE
+/* The REDUCE method computes a single value from an array. It builds a value by repeatedly taking a single element
+from the array and combining it with the current value.
+ */
+    
